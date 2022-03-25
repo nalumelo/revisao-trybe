@@ -45,4 +45,21 @@ for (let index = 0; index < arrayy.length; index += 1) {
 console.log(smaller);
 
 //ex 4
+let maiorPrimo;
 
+for (let index = 0; index <= 50; index += 1) {
+    let acc = 0;
+    for (let indexx = 0; indexx <= 50; indexx += 1) {
+        
+        if (index % indexx === 0) {
+            acc += 1;
+        } else {
+            acc = acc;
+        }
+    }
+    if (acc == 2) {
+        maiorPrimo = index;
+    }
+};
+
+console.log(maiorPrimo);
