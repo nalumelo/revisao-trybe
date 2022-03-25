@@ -32,3 +32,17 @@ if ((arrayy[index]).length > bigger.length) {
 };
 
 console.log(bigger);
+
+let smaller = arrayy[0];
+for (let index = 0; index < arrayy.length; index += 1) {
+    if ((arrayy[index]).length < smaller.length) {
+        smaller = arrayy[index];
+    } else {
+        smaller = smaller;
+    }
+};
+
+console.log(smaller);
+
+//ex 4
+
