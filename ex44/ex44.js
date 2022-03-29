@@ -54,3 +54,11 @@ let leitor = {
 
 //ex 6
 console.log(`O filme favorito de ${leitor.nome} ${leitor.sobrenome} se chama '${leitor.livrosFavoritos[0].titulo}'`);
+
+//ex 7
+leitor.livrosFavoritos.push({
+    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+    autor: 'JK Rowling',
+    editora: 'Rocco',
+});
+console.log(leitor);
