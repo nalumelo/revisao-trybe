@@ -8,3 +8,5 @@ let info = {
 console.log('Bem-vinda, ' + info.personagem);
 
 //ex 2
+info['recorrente'] = 'Sim';
+console.log(info);
