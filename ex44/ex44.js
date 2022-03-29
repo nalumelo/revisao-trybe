@@ -62,3 +62,6 @@ leitor.livrosFavoritos.push({
     editora: 'Rocco',
 });
 console.log(leitor);
+
+//ex 8
+console.log(`${leitor.nome} tem ${leitor.livrosFavoritos.length} livros favoritos`);
