@@ -10,3 +10,21 @@ function verificaPalindromo(string) {
 };
 
 console.log(verificaPalindromo('pelo'));
+
+//ex 2
+function indiceMaiorValor(array) {
+    let indice = 0;
+    let valor = 0
+    for (let index in array) {
+        if (array[index] > valor) {
+            valor = array[index];
+            indice = index;
+        } else {
+            valor = valor;
+            indice = indice;
+        }
+    };
+    return indice;
+};
+
+console.log(indiceMaiorValor([2, 3, 6, 7, 10, 1]));
