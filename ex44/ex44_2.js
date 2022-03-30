@@ -46,3 +46,22 @@ function indiceMenorValor(array) {
 };
 
 console.log(indiceMenorValor([2, 4, 6, 7, 10, 0, -3]));
+
+//ex 4
+function maiorNome(array) {
+    let num = 0;
+    let nome;
+    for (let index in array) {
+        let nomeSeparado = array[index].split('');
+        if (nomeSeparado.length > num) {
+            num = nomeSeparado.length;
+            nome = array[index];
+        } else {
+            num = num;
+            nome = nome;
+        }
+    };
+    return nome;
+};
+
+console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
