@@ -28,3 +28,21 @@ function indiceMaiorValor(array) {
 };
 
 console.log(indiceMaiorValor([2, 3, 6, 7, 10, 1]));
+
+//ex 3
+function indiceMenorValor(array) {
+    let indice = 0;
+    let valor = array[0];
+    for (let index in array) {
+        if (array[index] < valor) {
+            valor = array[index];
+            indice = index;
+        } else {
+            valor = valor;
+            indice = indice;
+        }
+    };
+    return indice;
+};
+
+console.log(indiceMenorValor([2, 4, 6, 7, 10, 0, -3]));
