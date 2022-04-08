@@ -65,3 +65,37 @@ function maiorNome(array) {
 };
 
 console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+//ex 5
+
+//1 - enquanto index for menor que o tamanho do array, aumente index em 1
+//2 - compare o numero atual com cada um dos outros numeros
+//3 - a cada vez que ele se repetir, some 1 no acumulador (que deve estar zerado)
+//4 - se o numero do acumulador atual for maior que o do acumulador anterior, o numero atual se torna o +repetido
+//5 - se não, o mais repetido continua sendo o anterior
+//6 - função retorna o mais repetido
+
+function repeteMais(array) {
+    let rep = 0;
+    let more;
+    for (let index in array) {
+        let acc = 0;
+        for (let index2 in array) {
+            if (array[index] === array[index2]) {
+                acc += 1;
+            } else {
+                acc = acc;
+            }
+        }
+        if (acc > rep) {
+            rep = acc;
+            more = array[index];
+        } else {
+            rep = rep;
+            more = more;
+        }
+    }
+    return more;
+};
+
+console.log(repeteMais([2, 3, 2, 5, 8, 2, 3]));
