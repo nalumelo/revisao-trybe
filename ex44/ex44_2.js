@@ -99,3 +99,22 @@ function repeteMais(array) {
 };
 
 console.log(repeteMais([2, 3, 2, 5, 8, 2, 3]));
+
+//ex 6
+
+//1 - verifica se o número recebido é natural (positivo e inteiro)
+//2 - cria um looping cujo index é igual a N
+//3 - diminui o index em 1 até ele ser maior que 0
+//4 - ao longo do looping, soma o index atual com um acumulador
+
+function somatorio(num) {
+    let acc = 0;
+    for (let index = num; index > 0; index -= 1) {
+        acc += index;
+    }
+    return acc;
+};
+
+console.log(somatorio(5));
+
+//ex 7
