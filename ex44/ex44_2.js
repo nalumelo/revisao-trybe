@@ -118,3 +118,5 @@ function somatorio(num) {
 console.log(somatorio(5));
 
 //ex 7
+
+//1 - verifica se ending é menos que word
