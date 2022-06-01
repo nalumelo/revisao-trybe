@@ -64,5 +64,9 @@ for (let i = 0; i < 3; i += 1) {
 }
 
 //ex 3
-let rmSection = document.getElementsByClassName('left-content')[0];
-main.removeChild(rmSection);
+let leftContent = document.getElementsByClassName('left-content')[0];
+main.removeChild(leftContent);
+
+//ex 4
+let rightContent = document.getElementsByClassName('right-content')[0];
+rightContent.style.marginRight = 'auto';
