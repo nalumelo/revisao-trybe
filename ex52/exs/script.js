@@ -58,4 +58,11 @@ for (let i = 0; i < 3; i += 1) {
 h1.className = 'title';
 
 //ex 2
-h3.className = 'description';
+let h33 = document.getElementsByTagName('h3');
+for (let i = 0; i < 3; i += 1) {
+    h33[i].className = 'description';
+}
+
+//ex 3
+let rmSection = document.getElementsByClassName('left-content')[0];
+main.removeChild(rmSection);
