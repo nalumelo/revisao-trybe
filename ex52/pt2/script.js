@@ -21,3 +21,7 @@ let teste3 = document.createElement('p');
 teste3.innerText = texto3;
 
 primeiroFilhoDoFilho.appendChild(teste3);
+
+//ex 4
+teste3.id = 'primeiroFilhoDoFilhoDoFilho';
+document.getElementById('primeiroFilhoDoFilhoDoFilho').parentElement.parentElement.nextElementSibling;
