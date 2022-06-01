@@ -46,3 +46,10 @@ for (let i = 0; i < numeros.length; i+= 1) {
     lista.appendChild(numItem);
 }
 rightSection.appendChild(lista);
+
+//ex 9
+for (let i = 0; i < 3; i += 1) {
+    let h3 = document.createElement('h3');
+    h3.innerText = "HA";
+    main.appendChild(h3);
+}
