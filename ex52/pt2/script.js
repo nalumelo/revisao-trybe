@@ -13,3 +13,11 @@ let teste2 = document.createElement('p');
 teste2.innerText = texto2;
 
 elementoOndeVoceEsta.appendChild(teste2);
+
+//ex 3
+let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+let texto3 = 'Texto 3';
+let teste3 = document.createElement('p');
+teste3.innerText = texto3;
+
+primeiroFilhoDoFilho.appendChild(teste3);
