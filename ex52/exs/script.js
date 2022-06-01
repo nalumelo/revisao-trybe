@@ -53,3 +53,6 @@ for (let i = 0; i < 3; i += 1) {
     h3.innerText = "HA";
     main.appendChild(h3);
 }
+
+//ex 1
+h1.className = 'title';
