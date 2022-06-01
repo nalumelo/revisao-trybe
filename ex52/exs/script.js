@@ -35,3 +35,14 @@ let img = document.createElement('img');
 img.src = 'https://picsum.photos/200';
 img.className = 'small-image';
 leftSection.appendChild(img);
+
+//ex 8
+let lista = document.createElement('ul');
+let numeros = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+for (let i = 0; i < numeros.length; i+= 1) {
+    let num = numeros[i];
+    let numItem = document.createElement('li');
+    numItem.innerText = num;
+    lista.appendChild(numItem);
+}
+rightSection.appendChild(lista);
