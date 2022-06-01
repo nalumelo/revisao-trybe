@@ -19,3 +19,8 @@ main.appendChild(section);
 let p = document.createElement('p');
 p.innerText = 'Algum texto';
 section.appendChild(p);
+
+//ex 5
+let leftSection = document.createElement('section');
+leftSection.className = 'left-content';
+main.appendChild(leftSection);
