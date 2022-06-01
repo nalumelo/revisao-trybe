@@ -14,3 +14,8 @@ body.appendChild(main);
 let section = document.createElement('section');
 section.className = 'center-content';
 main.appendChild(section);
+
+//ex 4
+let p = document.createElement('p');
+p.innerText = 'Algum texto';
+section.appendChild(p);
