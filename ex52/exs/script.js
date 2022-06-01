@@ -56,3 +56,6 @@ for (let i = 0; i < 3; i += 1) {
 
 //ex 1
 h1.className = 'title';
+
+//ex 2
+h3.className = 'description';
