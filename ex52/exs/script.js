@@ -70,3 +70,7 @@ main.removeChild(leftContent);
 //ex 4
 let rightContent = document.getElementsByClassName('right-content')[0];
 rightContent.style.marginRight = 'auto';
+
+//ex 5
+let centerContent = document.getElementsByClassName('center-content')[0];
+centerContent.parentElement.style.backgroundColor = 'green';
