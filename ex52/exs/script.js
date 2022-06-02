@@ -74,3 +74,7 @@ rightContent.style.marginRight = 'auto';
 //ex 5
 let centerContent = document.getElementsByClassName('center-content')[0];
 centerContent.parentElement.style.backgroundColor = 'green';
+
+//ex 6
+lista.lastChild.remove();
+lista.lastChild.remove();
