@@ -12,8 +12,6 @@ function createDaysOfTheWeek() {
   };
   
   createDaysOfTheWeek();
-  
-  // Escreva seu código abaixo.
 
 //ex 1
 //Escrever função que cria cada dia do calendario ''
@@ -46,3 +44,19 @@ function addDaysOfTheMonth() {
 }
 
 addDaysOfTheMonth();
+
+//ex 2
+//Funçao que recebe como parametro a string 'Feriados'
+//Criar um botao com o nome 'Feriados'
+//O botao deve ter o ID btn-holiday
+//O botao deve ser filho da div com classe buttons-container
+function holidayButton(string) {
+    const btnsDiv = document.querySelector('.buttons-container');
+    const holidayBtn = document.createElement('input');
+    holidayBtn.type = 'button';
+    holidayBtn.value = string;
+    holidayBtn.id = 'btn-holiday';
+    btnsDiv.appendChild(holidayBtn);
+}
+
+holidayButton('Feriados');
