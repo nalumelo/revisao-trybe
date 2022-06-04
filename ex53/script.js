@@ -60,3 +60,24 @@ function holidayButton(string) {
 }
 
 holidayButton('Feriados');
+
+//ex 3
+//Funçao que muda cor de fundo dos dias que possuem a classe feriado
+//Funcao que volta pra cor de fundo normal
+function changeColor() {
+    const hldyBtn = document.getElementById('btn-holiday');
+    const newColor = 'salmon';
+    const defaultColor = 'rgb(238,238,238)';
+    const holidays = document.getElementsByClassName('holiday');
+    hldyBtn.addEventListener('click', function() {
+        for (let i in holidays) {
+            if (holidays[i].style.backgroundColor === newColor) {
+                holidays[i].style.backgroundColor = defaultColor;
+            } else {
+                holidays[i].style.backgroundColor = newColor;
+            }
+        }
+    });
+}
+
+changeColor();
