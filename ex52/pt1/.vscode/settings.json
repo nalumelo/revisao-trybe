@@ -1,0 +1,6 @@
+{
+    "workbench.tings.useSplitJSON": true,
+    "liveServer.tings.AdvanceCustomBrowserCmdLine": "",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active"
+}
