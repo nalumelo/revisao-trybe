@@ -140,3 +140,17 @@ function zoomOut() {
 
 zoomIn();
 zoomOut();
+
+//ex 7
+//Funcao que adiciona tarefa ao calendario
+//Ela deve receber como parametro uma string com o nome da tarefa
+//Deve criar um elemento span contendo a tarefa
+//Esse span deve ser filho da div my-tasks
+function addTask(task) {
+    let myTasks = document.querySelector('.my-tasks');
+    let newTask = document.createElement('span');
+    newTask.innerHTML = task;
+    myTasks.appendChild(newTask);
+}
+
+addTask('Projeto: ');
