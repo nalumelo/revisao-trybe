@@ -81,3 +81,40 @@ function changeColor() {
 }
 
 changeColor();
+
+//ex 4
+//Funcao que recebe como parametro a string 'Sexta-feira
+//Criar um botao com o nome 'Sexta-feira'
+//O botao deve ter o ID btn-friday
+//O botao deve ser filho da div buttons-container
+function fridayButton(string) {
+    const btnsDiv = document.querySelector('.buttons-container');
+    const fridayBtn = document.createElement('input');
+    fridayBtn.type = 'button';
+    fridayBtn.value = string;
+    fridayBtn.id = 'btn-friday';
+    btnsDiv.appendChild(fridayBtn);
+}
+
+fridayButton('Sexta-feira');
+
+//ex 5
+//Funcao que muda o texto exibido nos dias que sao sexta
+//Ao clicar novamente o texto volta ao normal
+function sextou(array) {
+    const fridayBtn = document.getElementById('btn-friday');
+    const fridays = document.getElementsByClassName('friday');
+    const fridayText = 'Sextou';
+    fridayBtn.addEventListener('click', function() {
+        for (let i in fridays) {
+            if (fridays[i].innerText !== fridayText) {
+                fridays[i].innerText = fridayText;
+            } else {
+                fridays[i].innerText = array[i];
+            }
+        }
+    });
+}
+
+let fridayArray = [4, 11, 18, 25];
+sextou(fridayArray);
