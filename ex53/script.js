@@ -118,3 +118,25 @@ function sextou(array) {
 
 let fridayArray = [4, 11, 18, 25];
 sextou(fridayArray);
+
+//ex 6
+//Funcao que, ao passar o mouse em um dia do mes, o texto aumenta
+//Funcao que, ao tirar o mouse do dia do mes, o texto volta ao tamanho normal
+function zoomIn() {
+    const days = document.getElementById('days');
+    days.addEventListener('mouseover', function(event) {
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = '600';
+    });
+}
+
+function zoomOut() {
+    const days = document.getElementById('days');
+    days.addEventListener('mouseout', function(event) {
+        event.target.style.fontSize = '20px';
+        event.target.style.fontWeight = '200';
+    })
+}
+
+zoomIn();
+zoomOut();
