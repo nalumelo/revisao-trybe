@@ -154,3 +154,20 @@ function addTask(task) {
 }
 
 addTask('Projeto: ');
+
+//ex 8
+//Funcao que adiciona uma legenda com cor para a tarefa criada
+//Ela deve receber como paramentro uma string 'cor'
+//Ela deve criar uma div com classe task
+//A cor deve ser usada como background-color
+//O elemento criado deve ser filho de my-tasks
+function addColor(color) {
+    let myTasks = document.querySelector('.my-tasks');
+    let bgColor = document.createElement('div');
+
+    bgColor.className = 'task';
+    bgColor.style.backgroundColor = color;
+    myTasks.appendChild(bgColor);
+}
+
+addColor('salmon');
