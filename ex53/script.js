@@ -171,3 +171,21 @@ function addColor(color) {
 }
 
 addColor('salmon');
+
+//ex 9
+//Funcao que adiciona evento click a legenda de cor
+//Ao clicar o elemento recebe a classe task selected
+//Ao clicar novamente ele deve voltar a ser somente task
+function selectedTask() {
+    let tasks = document.querySelector('.task');
+    let selTask = document.getElementsByClassName('task selected');
+    tasks.addEventListener('click', function(event) {
+        if (selTask.length === 0) {
+            event.target.className = 'task selected';
+        } else {
+            event.target.className = 'task';
+        }
+    });
+}
+
+selectedTask();
