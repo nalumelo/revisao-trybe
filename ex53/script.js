@@ -212,3 +212,34 @@ function changeDayColor() {
 }
 
 changeDayColor();
+
+//bonus
+//Funcao que, ao digitar um compromisso na caixa de texto, adiciona o item a lista de compromissos quando clica no botao adicionar
+//Se nenhum caractere for inserido, deve retornar um alert com a mensagem ADICIONAR
+//Ao pressionar enter o evento tambem deve ser disparado
+//tecla enter dispara evento
+function setTaskList() {
+    let taskInput = document.querySelector('#task-input');
+    let addBtn = document.querySelector('#btn-add');
+    let taskList = document.querySelector('.task-list');
+    addBtn.addEventListener('click', function() {
+        if (taskInput.value.length > 0) {
+            let taskListItem = document.createElement('li');
+            taskListItem.innerText = taskInput.value;
+            taskList.appendChild(taskListItem);
+            taskInput.value = '';
+        } else {
+            alert('ADICIONE AO MENOS 1 CARACTER');
+        }
+    });
+    taskInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter' && taskInput.value.length > 0) {
+            let taskListItem = document.createElement('li');
+            taskListItem.innerText = taskInput.value;
+            taskList.appendChild(taskListItem);
+            taskInput.value = '';
+        }
+    });
+};
+
+setTaskList();
