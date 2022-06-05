@@ -177,8 +177,8 @@ addColor('salmon');
 //Ao clicar o elemento recebe a classe task selected
 //Ao clicar novamente ele deve voltar a ser somente task
 function selectedTask() {
-    let tasks = document.querySelector('.task');
-    let selTask = document.getElementsByClassName('task selected');
+    const tasks = document.querySelector('.task');
+    const selTask = document.getElementsByClassName('task selected');
     tasks.addEventListener('click', function(event) {
         if (selTask.length === 0) {
             event.target.className = 'task selected';
@@ -189,3 +189,26 @@ function selectedTask() {
 }
 
 selectedTask();
+
+//ex 10 
+//Funcao de evento no dia do mes do calendario
+//muda a cor do dia pra mesma cor da legenda da task selecionada
+//quando clicar de novo no dia com cor, a cor volta a cor anterior
+function changeDayColor() {
+    const selTasks = document.getElementsByClassName('task selected');
+    const days = document.querySelector('#days');
+    const task = document.querySelector('.task');
+    const taskColor = task.style.backgroundColor;
+
+    days.addEventListener('click', function(event) {
+        let eventColor = event.target.style.color;
+        if (selTasks.length > 0 && eventColor !== taskColor) {
+           let color = selTasks[0].style.backgroundColor;
+           event.target.style.color = color;
+        } else if (selTasks.length !== 0 && eventColor === taskColor) {
+            event.target.style.color = 'rgb(119,119,119)';
+        }
+    });
+}
+
+changeDayColor();
